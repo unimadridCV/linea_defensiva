@@ -40,7 +40,8 @@ while True: # Loop until break
 
     # Corre seguimiento
 
-    results = model(cuadro, verbose = True, show = False, classes = [2])
+    results = model(cuadro, verbose = True)
+    #results = model(cuadro, verbose = True, classes = [2]) # A usar con el modelo de detección de futbol
 
     personas_en_imagen = [] # Para guardar {track_id: [cx, cy, x1, y1, x2, y2]}
 
